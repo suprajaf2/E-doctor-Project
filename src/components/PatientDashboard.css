@@ -1,0 +1,312 @@
+/* General Styles */
+
+html,body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7fc;
+  
+}
+
+/* Patient Dashboard Container */
+.patient-dashboard-container {
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+/* Sidebar Styles */
+.patient-sidebar {
+  width: 280px;
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.sidebar-header {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.sidebar-header h2 {
+  margin: 0;
+}
+
+/* Sidebar Buttons */
+.sidebar-links button {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.sidebar-links button i {
+  margin-right: 10px;
+  font-size: 1.3rem;
+}
+
+.sidebar-links button:hover {
+  background-color: #3271af;
+}
+
+/* Patient Dashboard Header */
+.patient-dashboard-header {
+  background: linear-gradient(to right, #bbb5df);
+  color: rgb(255, 246, 246);
+  padding: 5px 10px; /* Minimal padding for better control */
+  display: flex;
+  justify-content: center; /* Center the text horizontally */
+  align-items: center; /* Center the text vertically */
+  font-size: 1.5rem;
+  height: auto; /* Ensure dynamic height */
+  line-height: 1.2; /* Manage spacing within the text */
+}
+
+.patient-dashboard-header h1 {
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Ensure no additional padding */
+  font-size: 2rem; /* Adjust font size if necessary */
+  line-height: 1.2; /* Tighten line spacing */
+  
+}
+
+/* Main Content */
+.patient-main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Card Styles */
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(236, 226, 226, 0.1);
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Profile Form and Input Styles */
+.profile-form input,
+.profile-form select,
+.profile-form textarea,
+.appointment-form input,
+.appointment-form select,
+.appointment-form textarea {
+  width: 100%;
+  padding: 4px;
+  margin: 7px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  justify-content: center;
+}
+
+.profile-form button,
+.appointment-form button {
+  background-color: #2c3e50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.profile-form button:hover,
+.appointment-form button:hover {
+  background-color: #2a77c4;
+}
+
+/* Logout Button Styles */
+.logout-button {
+  background-color: #2c3e50; /* Red for logout */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: 20px; /* Add some space on top */
+}
+
+.logout-button:hover {
+  background-color: #2576c8;; /* Darker red on hover */
+}
+
+/* Footer Styles */
+.patient-footer {
+  background: linear-gradient(to right,#2c3e50, #2c3e50);
+  color: white;
+  text-align: center;
+  padding:  5px 180px;
+  position: fixed;
+  bottom: 0;
+  width: 102%;
+}
+
+.patient-footer p {
+  margin: 0;
+  font-size: 14px;
+  background-color: #2c3e50;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .patient-dashboard-container {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width */
+}
+
+
+.patient-sidebar {
+  width: 280px; /* Fixed width for the sidebar */
+  height: 100vh; /* Full height of the viewport */
+  background-color: #2c3e50;
+  color: #fff;
+  position: fixed; /* Fix the sidebar in place */
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow-y: auto; /* Vertical scroll only for the sidebar content */
+}
+
+
+  *{box-sizing: border-box;}
+
+  .patient-main-content {
+    margin-left: 280px; /* Leave space for the fixed sidebar */
+    flex: 1; /* Take remaining space */
+    height: 100vh; /* Full viewport height */
+    overflow-y: auto; /* Enable vertical scrolling for the main content */
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+  .card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .patient-dashboard-header h1 {
+    font-size: 20px;
+  }
+
+  .sidebar-button {
+    font-size: 14px;
+  }
+
+  .logout-button {
+    font-size: 14px;
+  }
+
+  .profile-form input,
+  .profile-form select,
+  .profile-form textarea,
+  .appointment-form input,
+  .appointment-form select,
+  .appointment-form textarea {
+    font-size: 14px;
+  }
+}
+
+
+/* Feedback Form Styles */
+.feedback-form {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-form h2 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.feedback-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.feedback-form input[type="text"],
+.feedback-form select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.feedback-form select {
+  background-color: #fff;
+}
+
+.feedback-form button {
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #2c3e50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.feedback-form button:hover {
+  background-color: #2876c4;
+}
+
+.star-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.star-rating p {
+  margin-right: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.star-rating span {
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.star-rating span:hover {
+  color: gold;
+}

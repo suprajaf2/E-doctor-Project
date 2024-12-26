@@ -1,0 +1,80 @@
+.doctor-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('BackgroundImage.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial,sans-serif;
+}
+  .doctor-list {
+    width: 80%;
+    max-width: 900px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow-x: auto;
+  }
+  
+  .doctor-list h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .doctor-list table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .doctor-list th,
+  .doctor-list td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  .doctor-list th {
+    background-color: #007BFF;
+    color: white;
+  }
+  
+  .doctor-list td {
+    background-color: #f9f9f9;
+  }
+  
+  .doctor-list tr:nth-child(even) td {
+    background-color: #f2f2f2;
+  }
+  
+  .doctor-list tr:hover td {
+    background-color: #ddd;
+  }
+  
+  .doctor-list button {
+    padding: 8px 12px;
+    margin: 10px 0;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .doctor-list button:hover {
+    background-color: #45a049;
+  }
+  
+  .doctor-list input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  

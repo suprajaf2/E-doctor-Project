@@ -1,0 +1,230 @@
+/* General Layout */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+
+  margin-top: 10px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 290px;
+  background-color: #2c3e50;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.sidebar button {
+  display: flex;
+  align-items: center;
+  padding: 10px 18px;
+  margin: 12px 0;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.sidebar button:hover {
+  background-color: #2267ac;
+}
+
+.sidebar button i {
+  margin-right: 8px; /* Space between icon and text */
+  font-size: 1.2rem;
+}
+
+.doctorlogout-button {
+  background-color: #d9534f;
+  color: white;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.doctorlogout-button:hover {
+  background-color: #c9302c;
+}
+
+/* Header Styling */
+.header {
+  background: linear-gradient(to right, #bbb5df);
+  color: rgb(255, 246, 246);
+  padding: 5px 10px; /* Minimal padding for better control */
+  display: flex;
+  justify-content: center; /* Center the text horizontally */
+  align-items: center; /* Center the text vertically */
+  font-size: 1.2rem;
+  height: auto; /* Ensure dynamic height */
+  line-height: 1.1; /* Manage spacing within the text */
+  text-align: center;
+}
+
+/* Main Content Styling */
+.main-content {
+  flex: 1;
+  padding: 40px;
+  background: linear-gradient(to bottom, #ffffff, #f4f5f7);
+
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  overflow-y: auto;
+}
+
+/* Dashboard Content */
+.dashboard-content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  gap: 0px;
+}
+
+.dashboard-box {
+  width: 200px;
+  height: 100px;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #2c3e50;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-box i {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.dashboard-box h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.dashboard-box p {
+  font-size: 1rem;
+}
+
+/* Forms */
+.centered-form {
+  width: 60%;
+  padding: 60px;
+  margin: 0px 0;
+  border: 0px solid #ccc;
+  border-radius: 0px;
+  font-size: 16px;
+  justify-content: center;
+}
+
+.centered-form h2 {
+  color:#2c3e50;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.centered-form input,
+.centered-form button {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 35px;
+  font-size: 16px;
+  justify-content: center;
+  
+}
+
+.centered-form button {
+  background-color: #2c3e50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.centered-form button:hover {
+  background-color: #2c74bc;
+}
+
+/* Footer */
+.footer {
+  background: linear-gradient(to right,#2c3e50,#2c3e50);
+  color: white;
+  text-align: center;
+  padding: 12px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
+footer {
+  position: relative;
+  left: -20px; /* Moves it 20px to the left */
+}
+/* Responsiveness */
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+  .main-content {
+    margin: 10px;
+  }
+}
+
+/* Prescription List Styles */
+.prescription-list .prescription-item {
+  background-color: #fff0f6;
+  padding: 15px;
+  border: 1px solid #ffb3c6;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.prescription-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.prescription-list th,
+.prescription-list td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.prescription-list th {
+  background-color: #ffe6f0;
+  text-align: left;
+}
